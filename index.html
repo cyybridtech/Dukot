@@ -1,88 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dukot Array Service - Cakes, Pastries & Yogurt in Kumasi</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dukot Array Service - Technical Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">Dukot Array Service</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tight text-blue-400">
+                Dukot Array Service
+            </div>
+            <nav class="flex space-x-8">
+                <a href="#services" class="hover:text-blue-400 transition-colors duration-200 text-sm font-medium">Services</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors duration-200 text-sm font-medium">About</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors duration-200 text-sm font-medium">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Freshly Baked Cakes, Pastries, and Chilled Yogurt</h1>
-                <p>Experience the finest treats in Kumasi, made with love and the best ingredients.</p>
-                <a href="#products" class="btn">View Our Menu</a>
-            </div>
-        </section>
 
-        <section id="about" class="about container">
-            <h2>About Dukot Array Service</h2>
-            <div class="about-content">
-                <p>Dukot Array Service offers excellent customer service and is conveniently located in Kumasi. We take pride in our selection of high-quality, reasonably priced treats that bring joy to every occasion.</p>
-                <p>Rated #5 on "The 44 best desserts and snacks in Kumasi", we are dedicated to providing the best bakery experience for our customers.</p>
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white py-24 sm:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+                alt="Technical Background"
+                class="w-full h-full object-cover"
+            />
+        </div>
+        <div class="relative max-w-5xl mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                Dukot Array Service
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Your reliable professional service partner located in Kumasi, Ghana. Delivering top-tier solutions with excellence, field-tested expertise, and dedication.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a
+                    href="tel:+233246794339"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                >
+                    Call Us Today
+                </a>
+                <a
+                    href="#contact"
+                    class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg border border-slate-700 transition-all duration-200"
+                >
+                    View Hours
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="products" class="products container">
-            <h2>Our Delicious Selection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <h3>Custom Cakes</h3>
-                    <p>Beautifully crafted cakes for birthdays, weddings, and all your special celebrations.</p>
-                </div>
-                <div class="product-card">
-                    <h3>Fresh Pastries</h3>
-                    <p>A wide variety of sweet and savory pastries baked fresh daily.</p>
-                </div>
-                <div class="product-card">
-                    <h3>Chilled Yogurt</h3>
-                    <p>Refreshingly cold and delicious yogurt, the perfect companion to our baked goods.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Our Core Services
+            </h2>
+            <div class="mt-4 h-1 w-12 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
 
-        <section id="contact" class="contact container">
-            <h2>Get in Touch</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Visit Us</h3>
-                    <p>AE-0539-8874, Kumasi, Ghana</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Technical Operations</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">High-quality management, field diagnostics, and support services engineered for consistent performance.</p>
                 </div>
-                <div class="contact-item">
-                    <h3>Call Us</h3>
-                    <p><a href="tel:+233246794339">+233 24 679 4339</a></p>
+                <div class="mt-6 pt-4 border-t border-slate-50">
+                    <span class="text-blue-600 text-xs font-semibold uppercase tracking-wider">Reliable Execution</span>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-hours">
-                    <h3>Operating Hours</h3>
-                    <p>Monday - Saturday: 8:00 AM - 9:00 PM</p>
-                    <p>Sunday: Closed</p>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Professional Consulting</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Expert guidance and structural solutions tailored explicitly to meet your operations and technical goals.</p>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Dukot Array Service. All rights reserved.</p>
+                <div class="mt-6 pt-4 border-t border-slate-50">
+                    <span class="text-blue-600 text-xs font-semibold uppercase tracking-wider">Reliable Execution</span>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Quality Assurance</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Dedicated commitment to local safety protocols, project alignment, and client satisfaction guidelines.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-50">
+                    <span class="text-blue-600 text-xs font-semibold uppercase tracking-wider">Reliable Execution</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Info & Contact Hub -->
+    <section id="contact" class="bg-white border-t border-b border-slate-200 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <!-- Hours Grid -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Operational Hours</h2>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Monday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Tuesday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Wednesday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Thursday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Friday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Saturday</span>
+                            <span class="text-sm text-slate-600">8:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2.5 border-b border-slate-200/60 last:border-0">
+                            <span class="font-medium text-slate-700">Sunday</span>
+                            <span class="text-sm text-red-500 font-bold">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location & Details Card -->
+                <div class="flex flex-col justify-between p-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Registered Address</h4>
+                                <p class="text-lg text-slate-700 font-medium">AO-K729-6392, Kumasi, Ghana</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Direct Line</h4>
+                                <a
+                                    href="tel:+233246794339"
+                                    class="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+                                >
+                                    +233 24 679 4339
+                                </a>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-slate-600 text-sm leading-relaxed">
+                            We are fully operational and serving enterprise and local customers across the Ashanti region. Reach out directly by phone to organize diagnostic bookings, request service alignments, or speak directly with engineering managers.
+                        </p>
+                    </div>
+
+                    <div id="about" class="mt-8 pt-8 border-t border-slate-100">
+                        <p class="text-xs text-slate-400">
+                            Dukot Array Service values integrity, prompt response frameworks, and robust project alignment with domestic regulatory measures.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 Dukot Array Service. All Rights Reserved.</p>
+        <p class="mt-2 text-xs text-slate-600">Kumasi, Ashanti Region, Ghana</p>
     </footer>
+
 </body>
 </html>
